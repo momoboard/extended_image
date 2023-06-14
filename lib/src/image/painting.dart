@@ -129,7 +129,7 @@ void paintExtendedImage(
     destinationRect = editActionDetails.getFinalDestinationRect();
 
     ///outside and need clip
-    needClip = rect.beyond(destinationRect);
+    needClip = rect.beyond(destinationRect) || true;
 
     hasEditAction = editActionDetails.hasEditAction;
 
